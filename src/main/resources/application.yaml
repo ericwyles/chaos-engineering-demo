@@ -1,5 +1,11 @@
+spring:
+  application:
+    name: chaos-engineering-demo
+  profiles:
+    active: chaos-monkey
+
 alphavantage:
-  url: http://localhost:9090
+  url: https://www.alphavantage.co
   timeout: 3
 
 worldtradingdata:
@@ -12,12 +18,30 @@ resilience4j.circuitbreaker:
       minimumNumberOfCalls: 5
       registerHealthIndicator: true
       failureRateThreshold: 50
-      waitDurationInOpenState: 60000
+      waitDurationInOpenState: 20000
       slowCallDurationThreshold: 2
       slowCallRateThreshold: 50
-
-
 
 logging:
   pattern:
     console: "%clr(%d{${LOG_DATEFORMAT_PATTERN:yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %m%n"
+
+
+
+chaos:
+  monkey:
+    enabled: true
+    watcher:
+      component: true
+      controller: true
+      repository: true
+      rest-controller: true
+      service: true
+    assaults:
+      level: 3
+      latency-active: true
+      latency-range-end: 10000
+      latency-range-start: 3500
+      exceptions-active: true
+      watched-custom-services:
+      - com.ericwyles.chaosengineeringdemo.alphavantage.AlphaVantageService.getPrice

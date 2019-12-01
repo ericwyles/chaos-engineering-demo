@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 
@@ -29,7 +28,7 @@ public class StockPriceService {
     }
 
     @CircuitBreaker(name = "stockPriceCircuitBreaker", fallbackMethod = "getPriceFallback")
-    public Double getPrice(String symbol) throws InterruptedException, ExecutionException {
+    public Double getPrice(String symbol) throws Exception {
 
         log.info("Calling alphaVantageService with a timeout of {} seconds...", alphaVantageTimeout);
         // wrap in a completable future so we can time out the call after 3 seconds
