@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.ExecutionException;
+
 @RestController
 @Slf4j
 public class StockPriceController {
@@ -16,7 +18,7 @@ public class StockPriceController {
     }
 
     @GetMapping("/stock-price/{tickerSymbol}")
-    public Double getStockPrice(@PathVariable("tickerSymbol") String tickerSymbol) {
+    public Double getStockPrice(@PathVariable("tickerSymbol") String tickerSymbol) throws InterruptedException, ExecutionException {
         return stockPriceService.getPrice(tickerSymbol);
     }
 }

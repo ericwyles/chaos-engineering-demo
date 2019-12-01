@@ -1,5 +1,6 @@
 alphavantage:
   url: http://localhost:9090
+  timeout: 3
 
 worldtradingdata:
   url: https://api.worldtradingdata.com
@@ -12,8 +13,10 @@ resilience4j.circuitbreaker:
       registerHealthIndicator: true
       failureRateThreshold: 50
       waitDurationInOpenState: 60000
-      slowCallDurationThreshold: 60000
+      slowCallDurationThreshold: 2
       slowCallRateThreshold: 50
+
+
 
 logging:
   pattern:
