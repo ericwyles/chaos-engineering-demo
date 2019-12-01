@@ -4,6 +4,7 @@ alphavantage:
 worldtradingdata:
   url: https://api.worldtradingdata.com
 
+# reference: https://resilience4j.readme.io/docs/circuitbreaker
 resilience4j.circuitbreaker:
   instances:
     stockPriceCircuitBreaker:
@@ -11,7 +12,9 @@ resilience4j.circuitbreaker:
       registerHealthIndicator: true
       failureRateThreshold: 50
       waitDurationInOpenState: 60000
-      slidingWindowSize: 20
-      slidingWindowMinimumNumberOfCalls: 5
-      slidingWindowType: COUNT_BASED
-      permittedNumberOfCallsInHalfOpenState: 5
+      slowCallDurationThreshold: 60000
+      slowCallRateThreshold: 50
+
+logging:
+  pattern:
+    console: "%clr(%d{${LOG_DATEFORMAT_PATTERN:yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %m%n"

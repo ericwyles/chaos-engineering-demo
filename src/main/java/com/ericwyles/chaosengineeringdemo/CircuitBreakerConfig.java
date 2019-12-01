@@ -26,7 +26,7 @@ public class CircuitBreakerConfig {
                     circuitBreakerRegistry.circuitBreaker("stockPriceCircuitBreaker")
                             .getEventPublisher().
                             onEvent(event ->
-                                log.info("Circuit Breaker {}, Event Type {}, Event Creation Time {}",
+                                log.debug("Circuit Breaker {}, Event Type {}, Event Creation Time {}",
                                          event.getCircuitBreakerName(),
                                          event.getEventType(),
                                          event.getCreationTime())
