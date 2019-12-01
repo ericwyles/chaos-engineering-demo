@@ -1,16 +1,12 @@
 package com.ericwyles.chaosengineeringdemo;
 
-import com.ericwyles.chaosengineeringdemo.alphavantage.AlphaVantageClient;
 import com.ericwyles.chaosengineeringdemo.alphavantage.AlphaVantageService;
-import com.ericwyles.chaosengineeringdemo.alphavantage.GlobalQuoteResponse;
-import com.ericwyles.chaosengineeringdemo.worldtradingdata.WorldTradingDataClient;
-import com.ericwyles.chaosengineeringdemo.worldtradingdata.WorldTradingDataResponse;
 import com.ericwyles.chaosengineeringdemo.worldtradingdata.WorldTradingDataService;
 import io.github.resilience4j.circuitbreaker.CallNotPermittedException;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+
 
 @Service
 @Slf4j

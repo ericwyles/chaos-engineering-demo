@@ -23,12 +23,14 @@ public class CircuitBreakerConfig {
             public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
                 if (bean instanceof CircuitBreakerRegistry) {
                     CircuitBreakerRegistry circuitBreakerRegistry = (CircuitBreakerRegistry)bean;
-                    circuitBreakerRegistry.circuitBreaker("stockPriceCircuitBreaker").getEventPublisher().onEvent(event -> {
-                        log.info("Circuit Breaker {}, Event Type {}, Event Creation Time {}",
-                                 event.getCircuitBreakerName(),
-                                 event.getEventType(),
-                                 event.getCreationTime());
-                    });
+                    circuitBreakerRegistry.circuitBreaker("stockPriceCircuitBreaker")
+                            .getEventPublisher().
+                            onEvent(event ->
+                                log.info("Circuit Breaker {}, Event Type {}, Event Creation Time {}",
+                                         event.getCircuitBreakerName(),
+                                         event.getEventType(),
+                                         event.getCreationTime())
+                    );
 
                 }
                 return bean;

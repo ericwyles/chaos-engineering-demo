@@ -19,6 +19,7 @@ public class WorldTradingDataService {
     public Double getPrice(String symbol) {
         log.info("Getting stock price for symbol {} from WorldTradingData...", symbol);
         WorldTradingDataResponse worldTradingDataResponse = worldTradingDataClient.getRealTimeMarketData(symbol, worldtradingdataApiKey);
+        log.info("Response was {}", worldTradingDataResponse);
         return Double.valueOf(worldTradingDataResponse.getData().get(0).getPrice());
     }
 }
