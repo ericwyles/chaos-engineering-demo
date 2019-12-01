@@ -77,11 +77,6 @@
 			<artifactId>resilience4j-spring-boot2</artifactId>
 			<version>1.1.0</version>
 		</dependency>
-		<dependency>
-			<groupId>io.github.resilience4j</groupId>
-			<artifactId>resilience4j-timelimiter</artifactId>
-			<version>1.1.0</version>
-		</dependency>
 	</dependencies>
 
 	<build>
