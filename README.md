@@ -1,8 +1,10 @@
  In this version we introduce Resilience4J Circuit Breaker and Fallbacks to make the app more resilient. We also add a second remote service that we can retrieve prices from when the first service is down.
 
+[Diff to previous branch](https://github.com/ericwyles/chaos-engineering-demo/compare/03_ChaosToolkit...04_Resilience4j_Faults)
+
 ![branch](branch.png?raw=true)
 
-Start the app, and then start the wiremock.
+ Start the app, and then start the wiremock.
 
 ```
 ./run_wire_mock.sh
@@ -18,4 +20,4 @@ chaos run chaostoolkit/experiment-delay.json
 
 In this version, we are handling faults very well but a delay from AlphaVantage would cause or service to go out of response time tolerance.
 
-Continue to [05_Resilience4j_Faults_And_Delays](tree/05_Resilience4j_Faults_And_Delays)
+Continue to [05_Resilience4j_Faults_And_Delays](../../tree/05_Resilience4j_Faults_And_Delays)
