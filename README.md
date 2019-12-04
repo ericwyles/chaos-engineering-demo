@@ -11,6 +11,7 @@ The features are introduced gradually using the following branches:
 
 Each branch contains a Spring Boot application with progressively more fleshed out app code and configuration to handle faults and simulate faults for testing.
 
+If you have questions reach out to me here or connect on [LinkedIn](https://www.linkedin.com/in/ericwyles/).
 
 # Tools and Libraries Used
 
@@ -33,8 +34,8 @@ To execute the samples you will need to register for a free account on both site
 * ALPHAVANTAGE_API_KEY
 * WORLDTRADINGDATA_API_KEY
 
-If you have questions reach out to me here or connect on [LinkedIn](https://www.linkedin.com/in/ericwyles/).
 
+# Continue
 Continue to [01_SimpleService](../../tree/01_Simple_Service)
 
 
