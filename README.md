@@ -1,6 +1,6 @@
 This first version of the service is structured as shown below:
 
-![branch1](images/branch1.png)
+![branch1](branch1.png)
 
 To run this version you will need an api key for AlphaVantage.
 
