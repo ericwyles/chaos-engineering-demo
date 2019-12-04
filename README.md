@@ -2,7 +2,7 @@ This version of the app is quite a bit different.
 
 The WireMock and ChaosToolkit are gone. Now we have Chaos Moneky For Spring Boot running inside the app randomly introducing failures and delays.
 
-![branch](images/branch.png)
+![branch](branch.png?raw=true)
 
 The configuration from the application yaml is:
 
