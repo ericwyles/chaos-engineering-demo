@@ -3,7 +3,7 @@
  This version also wraps the AlphaVantageClient call in a CompletableFuture to time out the call and throw an exception.
 
 
-![branch](images/branch.png)
+![branch](branch.png?raw=true)
 
 
 To run this version you will need an api key for AlphaVantage.
