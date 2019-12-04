@@ -1,7 +1,5 @@
 This version builds upon the WireMock example and introduces [ChaosToolkit](https://chaostoolkit.org/) with the [WireMock driver](https://docs.chaostoolkit.org/drivers/wiremock/) .
 
-[Diff to previous branch](https://github.com/ericwyles/chaos-engineering-demo/compare/02_WireMock...03_ChaosToolkit)
-
 ![branch](branch.png?raw=true)
 
 The application logic is unchanged, but we have ChaosToolkit to orchestrate testing and experimenting now.
@@ -57,4 +55,5 @@ A few observations about this version:
 * ChaosToolkit will also handle the details of reconfiguring the WireMock for scenarios and rolling back after.
 * The application still does not handle faults in the remote service.
 
+# Continue
 Continue to [04_Resilience4j_Faults](../../tree/04_Resilience4j_Faults)
