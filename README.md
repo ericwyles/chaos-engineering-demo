@@ -1,6 +1,6 @@
 In this version, the app is unchanged, but we've introduced a [WireMock](http://wiremock.org/) between the app and the remote service.
 
-![branch2](branch.png)
+![branch2](https://ericwyles.com/wp-content/uploads/2019/12/branch_2-1024x405.png)
 
 Start the app, and then start the wiremock by running this command from the 'wiremock' directory
 
