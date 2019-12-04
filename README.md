@@ -1,7 +1,5 @@
 In this version, the app is unchanged, but we've introduced a [WireMock](http://wiremock.org/) between the app and the remote service.
 
-[Diff to previous branch](https://github.com/ericwyles/chaos-engineering-demo/compare/01_Simple_Service...02_WireMock)
-
 ![branch2](branch.png)
 
 Start the app, and then start the wiremock by running this command from the 'wiremock' directory
@@ -26,4 +24,5 @@ A few observations about this version:
 * Testing using WireMock is done manually in this version.
 * The application does not handle faults in the remote service.
 
+# Continue
 Continue to [03_ChaosToolkit](../../tree/03_ChaosToolkit)
