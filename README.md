@@ -1,6 +1,6 @@
  In this version we introduce Resilience4J Circuit Breaker and Fallbacks to make the app more resilient. We also add a second remote service that we can retrieve prices from when the first service is down.
 
-![branch](branch.png?raw=true)
+![branch](https://ericwyles.com/wp-content/uploads/2019/12/branch_4-1024x469.png)
 
  Start the app, and then start the wiremock.
 
