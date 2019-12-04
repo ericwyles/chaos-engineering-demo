@@ -1,6 +1,6 @@
 First, we start with a very basic application. The structure is shown below.
 
-![branch1](branch_1.png)
+ ![branch1](branch_1.png?raw=true)
 
 Run this app and then use your favorite client to:
 
