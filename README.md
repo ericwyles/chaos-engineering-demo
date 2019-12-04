@@ -26,21 +26,4 @@ chaos:
       - com.ericwyles.chaosengineeringdemo.alphavantage.AlphaVantageService.getPrice
 ```
 
-
-To run this version you will need an api key for AlphaVantage.
-
-You can get a license key here: https://www.alphavantage.co/support/#api-key
-
-And set it in the ALPHAVANTAGE_API_KEY environment variable when launching the app.
-
-With this version, all calls to alphavantage go through a wiremock.
-
-
-To run this version you will need an api key for WorldTradingData.
-
-You can get a license key here: https://www.worldtradingdata.com/
-
-And set it in the WORLDTRADINGDATA_API_KEY environment variable when launching the app.
-
-
 Start the app. The app should still handle faults well but the faults will be random. Use postman and observer the application logs.
