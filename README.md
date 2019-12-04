@@ -1,9 +1,18 @@
-This first version of the service is structured as shown below:
+First, we start with a very basic application. The structure is shown below.
 
 ![branch1](branch1.png)
 
-To run this version you will need an api key for AlphaVantage.
+Run this app and then use your favorite client to:
 
-You can get a license key here: https://www.alphavantage.co/support/#api-key
+```
+GET http://localhost:8080/stock-price/JBHT
+```
 
-And set it in the ALPHAVANTAGE_API_KEY environment variable when launching the app.
+You should receive a stock price.
+
+A few observations about this version:
+* There is no way to simulate failures without reconfiguring the applicaiton.
+* Once the app has been reconfigured it has to be restarted to recover. Automatic recovery from failures can't be tested in this version.
+
+
+Continue to [02_WireMock](tree/02_WireMock)
