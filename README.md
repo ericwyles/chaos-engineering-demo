@@ -26,4 +26,4 @@ A few observations about this version:
 * Testing using WireMock is done manually in this version.
 * The application does not handle faults in the remote service.
 
-Continue to [[03_ChaosToolkit](tree/03_ChaosToolkit)
+Continue to [03_ChaosToolkit](../../tree/03_ChaosToolkit)
