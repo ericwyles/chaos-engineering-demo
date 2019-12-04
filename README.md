@@ -10,7 +10,7 @@ The features are introduced gradually using the following branches:
 * [06_ChaosMonkey](tree/06_ChaosMonkey)
 
 
-Each branch contains a Spring Boot application with progressively more fleshed out app code and configuration to handle faults.
+Each branch contains a Spring Boot application with progressively more fleshed out app code and configuration to handle faults and simulate faults for testing.
 
 The app consists of 1 REST controller that returns a stock price. To retrieve stock prices two different free services are used.
 
