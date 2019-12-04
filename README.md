@@ -1,6 +1,6 @@
  This version builds upon the WireMock example and introduces [ChaosToolkit](https://chaostoolkit.org/) with the [WireMock driver](https://docs.chaostoolkit.org/drivers/wiremock/) .
 
-![branch](branch.png)
+![branch](branch.png?raw=true)
 
 
 To run this version you will need an api key for AlphaVantage.
