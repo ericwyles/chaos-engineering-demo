@@ -1,6 +1,6 @@
 This version of the app is quite a bit different.
 
-The WireMock and ChaosToolkit are gone. Now we have Chaos Moneky For Spring Boot running inside the app randomly introducing failures and delays.
+The WireMock and ChaosToolkit are gone. Now we have Chaos Monkey For Spring Boot running inside the app randomly introducing failures and delays.
 
 ![branch](branch.png?raw=true)
 
