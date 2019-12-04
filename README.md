@@ -1,6 +1,6 @@
 This version builds upon the WireMock example and introduces [ChaosToolkit](https://chaostoolkit.org/) with the [WireMock driver](https://docs.chaostoolkit.org/drivers/wiremock/) .
 
-![branch](branch.png?raw=true)
+![branch](https://ericwyles.com/wp-content/uploads/2019/12/branch_3-1024x422.png)
 
 The application logic is unchanged, but we have ChaosToolkit to orchestrate testing and experimenting now.
 
