@@ -26,4 +26,7 @@ chaos:
       - com.ericwyles.chaosengineeringdemo.alphavantage.AlphaVantageService.getPrice
 ```
 
-Start the app. The app should still handle faults well but the faults will be random. Use postman and observer the application logs.
+Start the app. The app should still handle faults well but the faults will be random.
+
+Use postman and observe the application logs. You should see failures happening randomly but the application should handle them and give you a stock price.
+
