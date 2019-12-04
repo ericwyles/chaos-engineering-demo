@@ -1,6 +1,6 @@
 First, we start with a very basic application. The structure is shown below.
 
- ![branch1](branch_1.png?raw=true)
+ ![branch1](https://ericwyles.com/wp-content/uploads/2019/12/branch_1-1024x375.png)
 
 Run this app and then use your favorite client to:
 
