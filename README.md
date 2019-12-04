@@ -9,8 +9,20 @@ The features are introduced gradually using the following branches:
 * [05_Resilience4j_Faults_And_Delays](../../tree/05_Resilience4j_Faults_And_Delays)
 * [06_ChaosMonkey](../../tree/06_ChaosMonkey)
 
-
 Each branch contains a Spring Boot application with progressively more fleshed out app code and configuration to handle faults and simulate faults for testing.
+
+
+# Tools and Libraries Used
+
+The following tools and libraries are used. Installation and getting started with this tools is not covered in detail here, so please see the links below for more information on the respective projects:
+* [WireMock](http://wiremock.org/)
+* [ChaosToolkit](https://chaostoolkit.org/)
+* [ChaosToolkit WireMock driver](https://docs.chaostoolkit.org/drivers/wiremock/)
+* [Resilience4J](https://github.com/resilience4j/resilience4j) / [Resilience4J Spring Boot 2](https://github.com/resilience4j/resilience4j-spring-boot2-demo)
+* [Chaos Monkey For Spring Boot](https://codecentric.github.io/chaos-monkey-spring-boot/) (inspired by [Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey))
+
+
+# API Credentials Needed
 
 The app consists of 1 REST controller that returns a stock price. To retrieve stock prices two different free services are used.
 
