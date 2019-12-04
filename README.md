@@ -14,5 +14,5 @@ A few observations about this version:
 * There is no way to simulate failures without reconfiguring the applicaiton.
 * Once the app has been reconfigured it has to be restarted to recover. Automatic recovery from failures can't be tested in this version.
 
-
+# Continue
 Continue to [02_WireMock](../../tree/02_WireMock)
