@@ -1,6 +1,6 @@
 This application keeps the same Resilience4J configuration as previous, and now we've wrapped a CompletableFuture around the AlphaVantage call.
 
-![branch](branch.png?raw=true)
+![branch](https://ericwyles.com/wp-content/uploads/2019/12/branch_5-1024x469.png)
 
 Start the app, and then start the wiremock
 
