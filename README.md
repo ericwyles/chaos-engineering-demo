@@ -2,29 +2,24 @@ This version builds upon the WireMock example and introduces [ChaosToolkit](http
 
 ![branch](branch.png)
 
-To run this version you will need an api key for AlphaVantage.
+The application logic is unchanged, but we have ChaosToolkit to orchestrate testing and experimenting now.
 
-You can get a license key here: https://www.alphavantage.co/support/#api-key
-
-And set it in the ALPHAVANTAGE_API_KEY environment variable when launching the app.
-
-With this version, all calls to alphavantage go through a wiremock.
-
-Start it using this command from the 'wiremock' directory
+Start the app and then start the wiremock.
 
 ```
 ./run_wire_mock.sh
 ```
 
-With the wire mock in place we can now simulate failures of the service and see how our app behaves.
+With ChaosTookit we can run experiments and simulate failures.
 
-With ChaosTookit we can run experiments and simulate failures:
+# Run a Successful Experiment
 
 ```
 chaos run chaostoolkit/experiment-success.json
 chaos run chaostoolkit/experiment-fault.json
 chaos run chaostoolkit/experiment-delay.json
 ```
+
 
 We can see from the output that our app is not handling faults or delays within tolerance. Example:
 
@@ -50,3 +45,14 @@ ce so failing this experiment
 [2019-12-04 11:14:08 INFO] Experiment ended with status: deviated
 [2019-12-04 11:14:08 INFO] The steady-state has deviated, a weakness may have been discovered
 ```
+
+
+
+Notes on this version:
+
+A few observations about this version:
+* We can use ChaosToolkit to help us by defining declarative, repeatable test scenarios.
+* ChaosToolkit will also handle the details of reconfiguring the WireMock for scenarios and rolling back after.
+* The application still does not handle faults in the remote service.
+
+Continue to [04_Resilience4j_Faults](tree/04_Resilience4j_Faults)
