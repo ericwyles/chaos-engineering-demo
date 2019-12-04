@@ -1,6 +1,6 @@
 In this version, the app is unchanged, but we've introduced a [WireMock](http://wiremock.org/) between the app and the remote service.
 
-![branch2](images/branch.png)
+![branch2](branch.png)
 
 To run this version you will need an api key for AlphaVantage.
 
